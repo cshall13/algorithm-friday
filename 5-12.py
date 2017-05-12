@@ -18,14 +18,15 @@ def algorithm2():
         multiplier += 1
 
     return candidate
+print algorithm2()
 
 
-##########################################
+#########################################
 
-# A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+# 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 
+# What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-# Find the largest palindrome made from the product of two 3-digit numbers.
 
 
 def isPalindrome(value):
@@ -68,9 +69,12 @@ def algorithm1():
             elif len(str(int(palindromes[i])/factors[k])) == 3:
                 return [palindromes[i], factors[k], int(palindromes[i])/factors[k]]
 
-                #print palindromes[i]
-                #print lyst[k]
+                # print palindromes[i]
+                # print lyst[k]
+print algorithm1();
 
 
 
-print algorithm2()
+
+
+
