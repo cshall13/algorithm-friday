@@ -7,13 +7,13 @@ def bubbleSort(lyst):
   switched = False
   times_through = 0
   for i in range(len(lyst) - 1):
-       for i in range(len(lyst) - (times_through+1)):
-          if lyst[i] > lyst[i+1]:
+       for j in range(len(lyst) - (times_through+1)):
+          if lyst[j] > lyst[j+1]:
                switched = True
-               first_element = lyst[i]
-               second_element = lyst[i+1]
-               lyst[i] = second_element
-               lyst[i+1] = first_element
+               first_element = lyst[j]
+               second_element = lyst[j+1]
+               lyst[j] = second_element
+               lyst[j+1] = first_element
        times_through += 1
        if switched == False:
            return lyst

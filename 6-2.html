@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+function convertPhone(phoneStr){
+	// var regex = /[0-9]{10}/;
+	// var regex = /.?\d{3}.?\d{3}.?\d{4}/;
+	// var formatted = phoneStr.match(regex);
+	var whatevs = phoneStr.match(/\d+/g);
+	// var replaced = phoneStr.replace(\D|"") 
+	// var result = phoneStr.match(regex);
+	var k=0;
+	var result = "";
+	for(i=0;i<whatevs.length;i++){
+		for(j=0;j<whatevs[i].length; j++){
+			if(k< 10){
+				result += whatevs[i][j];
+				if(k == 2 || k== 5){
+					result += "-";
+				} 
+			}
+			k++;
+		}
+	}
+	if(k<9){		
+		var convertLetters = phoneStr.match(/[a-zA-Z]+/g);
+		for(i=0;i<12-result.length;i++){
+			
+			};
+
+
+	}
+	console.log(numberMap.);
+	return result;
+
+}
+function letterToNumber(letter) {
+        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+       if(alphabet.indexOf(letter) <= 2){
+            return 2;
+        }else if(alphabet.indexOf(letter) <= 5){
+            return 3;
+        }else if(alphabet.indexOf(letter) <= 8){
+            return 4;
+        }else if(alphabet.indexOf(letter) <= 11) {
+            return 5;
+        }else if(alphabet.indexOf(letter) <= 14) {
+            return 6;
+        }else if(alphabet.indexOf(letter) <= 17) {
+            return 7;
+        }else if(alphabet.indexOf(letter) <= 20) {
+            return 8;
+        }else if(alphabet.indexOf(letter) <= 23) {
+            return 9;
+    }
+
+}
+
+
+console.log(convertPhone(
+'1900-acdc4Life'));
+
+</script>
+
+
+
+</body>
+</html>
+
+
